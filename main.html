@@ -10,14 +10,14 @@
 	<!-- the entire body must be written by student -->
 	<form action="http.php" method="post">
 		<label for="name">
-			Name <input id="name" placeholder="Name" type="text">
+			Name <input id="name" placeholder="Name" type="text" required>
 		</label><br>
 		<label for="email">
-			Email <input id="email" placeholder="Email" type="email">
+			Email <input id="email" placeholder="Email" type="email" required>
 		</label><br>
-		<label for="gender_m, gender_f">
-			Gender <input id="gender_m, gender_f" type="radio" name="gender" value="Male">Male
-			<input id="gender_m, gender_f" type="radio" name="gender" value="Female">Female
+		<label for="gender_m, gender_f" >
+			Gender <input id="gender_m, gender_f" type="radio" name="gender" value="Male" required>Male
+			<input id="gender_m, gender_f" type="radio" name="gender" value="Female" required>Female
 		</label><br>
 		<label for="cars">
 			Car Brand <select name="cars" id="cars">
@@ -28,19 +28,19 @@
 			</select><br>
 		</label>
 		<label for="age">
-			Age <input type="number" id="age" placeholder="Age">
+			Age <input type="number" id="age" placeholder="Age" required>
 		</label><br>
 		<label for="dob">
-			DOB <input type="date" id="dob">
+			DOB <input type="date" id="dob" required>
 		</label><br>
 		<label for="tel">
 			Phone Number <input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
 		</label><br>
-		<label for="password">
+		<label for="password" required>
 			Password <input type="password" id="password" placeholder="password">
 		</label><br>
 		<label for="tos">
-			I agree to the TOS <input type="checkbox" id="tos">
+			I agree to the TOS <input type="checkbox" id="tos" required>
 		</label><br>
 		<button type="submit">Submit</button>
 		
